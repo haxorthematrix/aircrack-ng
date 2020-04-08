@@ -16,6 +16,9 @@
 [![PackageCloud DEB](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/aircrack-ng/git/install#bash-deb)
 [![PackageCloud RPM](https://img.shields.io/badge/rpm-packagecloud.io-844fec.svg)](https://packagecloud.io/aircrack-ng/git/install#bash-rpm)
 
+### Note: this version adds the patches to decrypt KR00Ked packets, based on the post by Thijs Bosschert at [https://www.thice.nl/playing-with-kr00k/](https://www.thice.nl/playing-with-kr00k/)
+
+
 Aircrack-ng is a complete suite of tools to assess WiFi network security.
 
 It focuses on different areas of WiFi security:

